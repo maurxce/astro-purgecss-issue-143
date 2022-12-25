@@ -1,0 +1,35 @@
+---
+import "../styles/bulma.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>#143</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: beige;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  h1 {
+    color: red !important;
+  }
+
+  a:hover {
+    color: green;
+  }
+</style>
